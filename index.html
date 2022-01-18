@@ -22,7 +22,7 @@
         </h1>
       
         <div class="botoes justify-content-center d-flex mb-3">
-          <button class="btn btn-secondary m-2">Bolb</button>
+          <button class="btn btn-secondary m-2 active">Bold</button>
           <button class="btn btn-secondary m-2">Italic</button>
           <button class="btn btn-secondary m-2">Underline</button>
         </div>
@@ -33,16 +33,16 @@
           <div class="col-6 d-flex justify-content-center">
             <h5>Your Document Text</h5>
           
-            <input id="text-input" type="text" class="form-control">
+            <input id="text-input" onkeyup="updateText()" type="text" class="form-control">
           </div>
           
           <div class="col-6 d-flex justify-content-center">
             <h5>Formatted Text</h5>
           
-            <input id="text-output" type="text" class="form-control">
+            <output id="text-output" type="text" class="form-control">
           </div>
         </div>
-        
+
       </div>
 
       <div class="row m-5">
